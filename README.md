@@ -11,8 +11,8 @@ let object = {
   b: 7
 }
 
-let getCallback = (target, property) => console.log(target, property)
-let setCallback = (target, property, value, receiver) => console.log(target, property, value, receiver)
+const getCallback = (target, property) => console.log(target, property)
+const setCallback = (target, property, value, receiver) => console.log(target, property, value, receiver)
 
 object = proxier(object, getCallback, setCallback )
 ```
