@@ -21,5 +21,4 @@ export const proxier = (what, getCallback = null, setCallback = null) => {
   }
 
   return new Proxy(what, changeHandler)
-
 }
